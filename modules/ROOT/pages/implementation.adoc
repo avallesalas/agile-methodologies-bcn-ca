@@ -1,0 +1,195 @@
+= Implantació de la política Agile en projectes i serveis TIC
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+include::{partialsdir}/README.adoc[tag=metadata]
+
+Per a l'aplicació de les directrius enunciades a l'apartat anterior, l'IMI ha desenvolupat una metodologia Agile basada en Scrum i adaptada a les seves funcions com a responsable de les TIC de l'Ajuntament de Barcelona.
+
+== Criteris bàsics i estructurals
+
+L'IMI durà a terme els projectes de manera alineada amb l'estructura organitzativa de l'Ajuntament de Barcelona.
+
+Tot i que és viable combinar desenvolupaments àgils i projectes amb metodologies tradicionals (enfocament “bimodal”), és més difícil per gestionar les dependències dels desenvolupaments amb diferents cicles de vida i amb altres rols externs.
+Per aquest motiu, es recomana que la gestió dels projectes de les unitats de l'Ajuntament (àrees, sectors i districtes) es faci en mode àgil o en mode tradicional, però no combinant els dos models.
+
+D'altra banda, dins d'una unitat municipal en la qual es duen a terme tots els desenvolupaments en mode àgil, pot ser difícil absorbir els pics de demandes sense sobredimensionar la capacitat dels equips àgils o allargar en excés els temps de resposta.
+En aquest cas, pot ser convenient contractar projectes tradicionals en paral·lel.
+
+== Metodologia Scrum@IMI
+
+Els projectes determinats com a “àgils” seguiran la metodologia de desenvolupament àgil d'aplicacions de l'IMI, anomenada Scrum@IMI.
+Està basada en el marc de treball Scrum i té en compte pràctiques d'enginyeria provinents d'altres models, com DevOps.
+
+Aquesta metodologia se suportarà sota l'ús d'una plataforma ALM (Application Life-cycle Management) amb eines que inclouran, entre altres:
+
+* Planificació del desenvolupament (releases, sprints, paquets de treball, defectes, etcètera)
+* Repositoris de documentació, codi i binaris
+* Gestió de requisits i proves
+* Automatització de les proves unitàries i funcionals
+* Integració continua i desplegament continu
+* Control de la qualitat del codi
+
+El seu ús serà obligatori per part de l'adjudicatari sense que li suposi un cost addicional en llicències.
+
+Tota la documentació que es generi internament en el desenvolupament s'haurà de gestionar amb les eines que es determinin a l'inici del projecte, preferentment en format wiki.
+
+Les característiques principals previstes per a aquesta metodologia es comenten segons el seu cicle de vida en els apartats següents.
+
+Els esdeveniments o events (activitats i fites) habituals de la metodologia Scrum@IMI inclouen:
+
+[cols=",",options="header",]
+|===
+a| *Reunió / esdeveniment* | *Objectius*
+a| *_Sprint_*
+ | Cicle de desenvolupament, amb una durada de dues a quatre setmanes, en el qual es lliura una part del sistema (inclosos tots els subproductes com documentació i proves).
+El client pot optar per publicar o no l'increment lliurat pel
+proveïdor.
+a| *Planificació d'_sprint_*
+ | Determinar, entre el _Product Owner_ i l'equip de desenvolupament, la part del producte que es farà durant l'_sprint_.
+a|*_Daily Meeting_*
+ | L'equip de desenvolupament fa el seguiment de l'sprint i les correccions adients.
+ En cas de desviació, s'avisa el _Product Owner_ i l'_Scrum Master_.
+a| *Revisió d'_sprint_*
+ | L'Equip _Scrum_, amb els actors externs convidats, examina el resultat de l'_sprint_ i revisa el pla per als sprints següents.
+a| *Retrospectiva d'_sprint_*
+ | L'Equip _Scrum_ examina el seu funcionament propi i planifica millores concretes.
+|===
+
+== Rols i responsabilitats
+
+La implementació dels rols de Scrum a l'IMI es fa respectant al màxim els objectius i les responsabilitats estàndard dels rols, a la vegada que s'adapten al context de l'IMI, que proveeix serveis complexos de gestió de TIC per a l'Ajuntament de Barcelona.
+
+Els rols principals són:
+
+* *_Product owner_ (Ajuntament)*
+
+* *_Proxy product owner_ (IMI)*
+
+* *_Scrum master_ (IMI o Proveïdor)*
+
+* *Equip de Desenvolupament (Proveïdor)*
+
+*PRODUCT OWNER (AJUNTAMENT)*
+
+El Product Owner (PO) és el rol que té com a objectiu ampliar al màxim el valor lliurat als usuaris.
+Les millors implementacions del rol són aquelles en les quals el PO està a prop d'on es prenen les decisions “de negoci”, motiu pel qual amb aquest rol s'apodera alguna persona clau dels sectors i les gerències de l'Ajuntament.
+Aquest apoderament li permetrà poder conèixer amb transparència i freqüència l'estat dels desenvolupaments, per poder controlar-lo i prendre decisions informades.
+
+El PO de l'Ajuntament acostuma a tenir una alta càrrega de feina i molts interlocutors amb qui treballar.
+Això fa que pugui tenir poca dedicació a les activitats habituals del PO, com gestionar i desglossar el backlog del producte i dedicar temps a l'Equip de desenvolupament.
+Per aquests motius, serà freqüent que els PO tinguin un rol assistent a l'IMI, anomenat _Proxy Product Owner_.
+Això en cap cas no ha de restar-li transparència en les activitats de l'equip ni en la capacitat de decisió.
+
+*_PROXY PRODUCT OWNER_ (IMI)*
+
+El *Proxy Product Owner* (PPO) no és un rol estàndard de Scrum, però si un patró en situacions en les quals és difícil trobar un PO que tingui a la vegada visió i capacitat de decisió des del punt de vista de negoci, o bé també per raons de proximitat a l'Equip de desenvolupament i de disponibilitat per estructurar i prioritzar el backlog de manera detallada.
+En el context de l'Ajuntament i de l'IMI, serà freqüent que l'IMI aporti aquest rol.
+
+*EQUIP DE DESENVOLUPAMENT (PROVEÏDOR)*
+L'Equip de desenvolupament, format per un grup de tres a nou membres (preferiblement amb perfils polivalents), duu a terme totes les activitats necessàries referents al desenvolupament del projecte, amb l'objectiu principal de la millora continua.
+Per fer-ho, l'equip interacciona amb tots els rols de l'IMI necessaris, dels quals el PO i el PPO seran els interlocutors principals respecte a la feina que cal fer, i l'_Scrum Master_ els servirà de guia metodològica i també d'orientació organitzativa dins de l'IMI.
+
+*SCRUM MASTER (IMI / PROVEÏDOR)*
+
+L'_Scrum Master_(SM) té com a missió ensenyar _Scrum_ i utilitzar el marc de treball per millorar el valor i l'efectivitat del desenvolupament de l'equip.
+En el context de l'IMI, això ho aconsegueix fent de guia de la metodologia, duent a terme el seguiment i els controls del rendiment de l'equip o bé, si cal, fent un entrenament individual a algun membre de l'equip.
+Addicionalment, la figura de l'SM ajudarà a fer que l'equip s'integri a l'entorn de l'IMI i l'Ajuntament, especialment amb els departaments transversals.
+
+
+== Activitats
+
+A continuació, identifiquem els objectius i el contingut de les activitats principals de la metodologia Agile de l'IMI.
+En el cas que calgui aprofundir més en detall en alguna d'aquestes activitats, es pot consultar la documentació proporcionada per l'Espai Agile.
+
+=== ACTIVITAT: PLANIFICACIÓ DE LLIURAMENTS
+
+L'activitat de planificació de lliuraments es fa prèviament a la construcció del producte, però es pot replanificar durant aquesta activitat quan es consideri necessari.
+El seu objectiu és actualitzar i controlar la planificació dels _sprints_ i els lliuraments, de manera consensuada entre tot l'Equip Scrum, amb el lideratge del _Product Owner_ i el _Proxy Product Owner_.
+El resultat d'aquesta activitat és el Pla de desenvolupament, basat en la proposta de l'adjudicatari a la seva oferta, i haurà de ser conforme als requisits especificats en el Plec
+
+=== ACTIVITAT: REFINAMENT DEL _BACKLOG_
+
+L'activitat de refinament del _backlog_ es fa durant el desenvolupament del producte i la lideren els rols de _Product Owner_ i _Proxy Product Owner_.
+El seu objectiu és analitzar funcionalment i tècnicament els paquets de treball del _backlog_ del producte.
+
+Durant aquesta activitat, s'espera una alta interacció amb les persones usuàries i altres rols de l'IMI. És recomanable elaborar maquetes estàtiques o prototipus dinàmics que incloguin les funcionalitats més importants del sistema perquè l'usuari pugui validar-les.
+
+=== ACTIVITAT: _SPRINT_
+
+L'objectiu d'aquesta activitat és la construcció de l'increment del sistema, representat per l'_sprint_ backlog, corresponent a la prioritat de negoci i tècnica que consensuïn el _Product Owner_ i el _Proxy Product Owner_ amb l'Equip de desenvolupament.
+Al final de l'_sprint_, el PO i el PPO són els responsables de fer la validació i l'acceptació formal dels paquets de treball que formin l'increment, sempre amb l'assistència de l'_Scrum Manager_.
+
+L'incompliment per part de l'adjudicatari a l'hora de lliurar els increments realitzats al final de l'_sprint_ podrà ser objecte d'aplicació de sancions per part de l'IMI, tal com es detalla a la clàusula “Penalitzacions del plec administratiu”.
+
+=== ACTIVITAT: TRANSICIÓ
+
+L'objectiu d'aquesta activitat és el lliurament i la posada en producció dels paquets de treball que determini el _Product Owner_ de manera alineada amb les necessitats de l'usuari i altres actors de l'IMI, com ara els grups d'Operacions i de Servei d'Assistència a l'Usuari.
+Aquest lliurament pot ser puntual i sota demanda durant l'sprint, per exemple, per solucionar una incidència urgent, o es pot fer al final de l'sprint.
+
+L'acceptació de l'activitat de transició està condicionada a la validació i l'aprovació, per part del _Proxy Product Owner_, de l'IMI.
+En cas de canvis de versions significatius, l'acceptació formal del projecte es farà en una reunió del comitè de direcció del projecte.
+El fet de no assolir els objectius d'aquesta activitat suposarà que s'aturi el projecte.
+
+=== ACTIVITAT: OPERACIÓ
+
+L'objectiu d'aquesta activitat, que serà d'interès per a l'adjudicatari en el cas que l'abast dels serveis contractats inclogui el suport a l'usuari, és donar suport de nivell 2 i 3 (conceptes d'ITIL) al grup de Servei d'Atenció a l'Usuari (SAU) i a la Direcció d'Operacions.
+
+El _Proxy Product Owner_ actuarà com a “responsable del servei” a l'hora de prioritzar les incidències identificades i escalades pels grups de SAU i Operacions i donar-hi seguiment.
+La secció Suport a Usuaris descriu els protocols i els acords de nivell de servei (ANS) que determinen la prestació d'aquest servei.
+
+== Els equips de treball i la seva gestió
+
+El model _Scrum_ es pot implementar amb equips contractats de dues maneres: equips per al desenvolupament de nous projectes i equips de manteniment d'aplicacions (AM).
+A continuació, podrem veure quines diferències tenen en el context Agile.
+
+Els equips multidisciplinaris haurien de tenir competències per poder:
+
+* Dissenyar i construir un servei digital.
+* Operar i mantenir un servei digital.
+
+Les competències que es necessiten canviaran durant el cicle de vida del servei i podran rebre el suport de rols addicionals.
+Tot l'equip i, en especial, els dissenyadors, els investigadors d'usuari i els desenvolupadors han de treballar junts per dissenyar, construir, testar i lliurar el producte.
+
+=== EQUIPS PER A PROJECTES NOUS
+
+Els equips per a projectes nous s'han de contractar amb un abast del servei definit abans d'iniciar el desenvolupament.
+La definició del contracte requereix una conceptualització prèvia del sistema que es vol construir, que es desenvoluparà conjuntament entre el PO de l'Ajuntament i el PPO de l'IMI.
+Aquesta conceptualització ha d'incloure la creació:
+
+* D'un _backlog_ inicial que defineixi l'abast del desenvolupament en forma d'ítems o paquets de treball.
+
+* D'un pla de lliuraments que identifiqui els lliuraments que es faran i quins _sprints_ en formen part.
+
+=== EQUIP DE MANTENIMENT D'APLICACIONS (AM)
+
+Els equips de manteniment (AM) estaran contractats a priori i aniran rebent peticions de tipus divers (correctiu, evolutiu i perfectiu), que s'acumularan al backlog.
+Les peticions urgents s'atendran com més aviat millor, seguint els objectius de l'ANS.
+La resta de peticions es planificaran perquè s'atenguin en sprints, probablement d'una durada més curta (per exemple, una setmana) que els equips de projecte, ja que els paquets habitualment seran més petits i independents.
+
+=== 3.	COEXISTÈNCIA ENTRE ELS EQUIPS DE PROJECTE I ELS AM
+
+La coexistència entre els equips _Scrum_ per desenvolupar nous productes i els equips _Scrum_ que els mantenen tindrà diverses casuístiques depenent del grau de llibertat dels contractes amb els proveïdors i de l'opció que considerin més oportuna el _Proxy Product Owner_ i l'_Scrum Master_.
+Les opcions, en ordre de més a menys ideal, són:
+
+* L'equip de producte té integrats els membres de l'AM, de manera estable, per treballar conjuntament en les mateixes aplicacions.
+
+* L'equip AM disposa d'una dedicació temporal assignada per treballar dins de l'equip de producte i preparar la transferència de l'aplicació una vegada lliurada a l'IMI.
+
+* L'equip AM no té una dedicació assignada per treballar durant el desenvolupament de l'aplicació, però té els increments freqüents i els “fets” per anar preparant la transferència, i també podria participar puntualment a les revisions dels _sprints_.
+
+== Execució de projectes
+
+Els projectes Agile gestionats per l'IMI s'han d'executar conforme als principis següents, reflectits en el contracte corresponent amb els proveïdors:
+
+. Se seguiran les recomanacions i les directrius metodològiques àgils de l'IMI, com a PPO, presentades en el plec i dins de l'Espai Agile de l'IMI, així com les que siguin contextuals i que transmeti l'_Scrum Master_, que observarà un principi general de respecte a l'autogestió de l'equip.
+
+. Caldrà tenir disponible, al final de cada sprint, un lliurable o increment de producte pactat (programari d'increment) que compleixi els mínims de qualitat definits a l'Espai Agile.
+En cas que sigui impossible lliurar tots els continguts planificats, prevaldrà la qualitat sobre la quantitat.
+
+. Caldrà ser transparent amb l'_Scrum Master_ (i eventualment el PPO) davant els possibles problemes interns de l'equip, així com els impediments externs, per buscar conjuntament les millors solucions als problemes puntuals i estructurals del desenvolupament.
+
+. El proveïdor utilitzarà les eines corporatives, així com les normes metodològiques mínimes que afavoreixin la interoperabilitat entre equips, com ara l'idioma, l'estructura i el nivell de detall de la documentació del codi i altres suports documentals.
+
+. L'equip responsable dels nivells 2 i 3 de la gestió d'incidències del servei haurà de tenir coneixements mínims de sistemes i treballar de manera tan integrada com es pugui amb l'IMI.
+En un futur, es preveu que, depenent de les capacitats d'automatització del desplegament de la plataforma usada, l'equip podrà desplegar el sistema de manera autònoma en els entorns de Preproducció i Producció.

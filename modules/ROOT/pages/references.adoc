@@ -1,0 +1,81 @@
+[appendix]
+= Més informació; Referències
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+include::{partialsdir}/README.adoc[tag=metadata]
+
+*Documentació de l'Ajuntament de Barcelona*
+
+* Ajuntament de Barcelona: _Directrius per a la prestació de serveis digitals AGILE_, 2017
+
+*Referències:*
+
+* Manifest Agile: _http://agilemanifesto.org/iso/en/manifesto.html_
+* Principis Agile: _http://agilemanifesto.org/iso/en/principles.html_
+
+*_Scrum_*
+
+* *“The Scrum Guide”, Schwaber and Sutherland.*
+Aquest document de disset pàgines és la definició oficial de _Scrum_.
+Es recomana encaridament llegir-lo per entendre la filosofia d'aquest marc de treball, així com els seus components i regles.
+
+* *Scrum Pocket Guide, Verheyen.*
+Aquest petit llibre, d'aproximadament cent pàgines, és una ampliació comentada de la _Scrum Guide_.
+Es recomana llegir-lo si es vol tenir un bon coneixement teòric del marc de treball.
+
+* *_Large-Scale Scrum_, Larman & Bodde.*
+Aquest llibre descriu el model _Large-Scale Scrum_ (LeSS) per aplicar _Scrum_ a equips múltiples i, per tant, és un llibre avançat.
+Tot i així, una vegada es coneixen els conceptes bàsics de _Scrum_, aquest llibre els revisa d'una manera reflexiva i acurada, a més d'introduir molts altres conceptes més avançats.
+
+*Definir productes i _backlogs_*
+
+* *_User Stories Applied_, Cohn.*
+Aquest llibre és una guia pràctica per entendre què són les històries d'usuari i com fer-ne un bon ús.
+
+* *_User Story Mapping_, Patton.*
+Obra que aprofundeix sobre la utilitat de la tècnica del mapeig d'històries per entendre millor els problemes de l'usuari i com dissenyar plans de desenvolupament ràpids i que aprofitin els lliuraments freqüents per optimitzar el valor que s'ofereix a les persones usuàries.
+
+*Planificació àgil*
+
+* *_Agile Estimating and Planning_, Cohn.*
+Guia sobre el procés d'estimar l'esforç dels _backlogs_ de producte i sobre com utilitzar aquestes estimacions per planificar versions i _sprints_ i fer el seguiment dels plans.
+* *_Scrum & XP from the trenches_, Kniberg.*
+Aquest llibre es pot descarregar lliurement de la web InfoQ. És una guia completa i pragmàtica sobre com fer un desenvolupament utilitzant _Scrum_ i _Extreme Programming_.
+
+* *_Agile Project Management with Scrum_, Schwaber.*
+Llibre que recull l'experiència pràctica del cocreador de _Scrum_ en la seva aplicació a diverses empreses i explicant el que va anar bé i el que no va funcionar.
+
+*_Product Owner_*
+
+* *_AGILE Product Management with Scrum_.*
+Bona introducció al rol de _Product Owner_, a les seves responsabilitats i a com dur a terme les activitats habituals durant el cicle de vida d'un producte.
+
+* *_Scrum Product Ownership, Galen_.*
+Explica com desenvolupar el rol de _Product Owner_, tant en organitzacions petites com grans i inclou especialment els aspectes d'organització amb tots els actors involucrats.
+
+*_Scrum Master_*
+
+* *_Scrum Mastery_, Watts.*
+Descriu, d'una manera àgil i amena, quin és l'enfocament correcte del rol de _Scrum Master_. És una introducció molt recomanable.
+
+* *_Coaching Agile Teams_, Adkins.*
+Referència avançada per a qualsevol _coach_ i _Scrum Master_ professional. És molt detallat i conté conceptes avançats.
+
+* *_Succeeding with AGILE_, Cohn.*
+Aquest llibre explica patrons per estendre l'agilitat dins de les organitzacions.
+No hi ha cap metodologia unificada per introduir l'agilitat a les empreses; aquests consells poden ser útils per aplicar al context únic de cada organització.
+
+*Altra documentació consultada*
+
+Govern del Regne Unit. “_Agile Delivery_”, _https://www.gov.uk/service-manual/agile-delivery_
+
+Nuottila J., Aaltonen K., Kujala J. “_Challenges of adopting agile methods in a public Organization_”, International Journal of Information Systems and Project Management, vol. 4, No. 3 (2016), pp. 65-85, DOI: 10.12821/ijispm040304.
+
+Torrecilla-Salinas C. J., Sedeño J., Escalona M. J., Mejías M. “_Agile in Public Administration: Oxymoron_ _or reality? An experience report_”, CAiSE Industry Track, vol. 1017 of CEUR Workshop Proceedings, pp.1-8, CEUR-WS.org (2013), en línia a  _http://ceur-ws.org/Vol-1017/Paper1CAiSE_IT2013.pdf_
+
+Software Engineering Institute of the CMU. “_Contracting for Agile Software Development in the Department of Defense: An Introduction_” (August 2015), en línia a _https://resources.sei.cmu.edu/asset_files/TechnicalNote/2015_004_001_442515.pdf_
+
+US Government Accountability Office. “_Software Development: Effective Practices and Federal Challenges in Applying Agile Methods_”, GAO-12-681, en línia a _http://www.gao.gov/assets/600/593091.pdf_
+
+Balter B. “_Towards a More Agile Government_”, 41 Pub. Cont. L. J. 149, The Public Contract Law Journal (autumn 2011), en línia a _https://ben.balter.com/2011/11/29/towards-a-more-agile-government/_

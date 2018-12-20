@@ -1,0 +1,101 @@
+= Política Agile de l'Ajuntament de Barcelona
+:experimental:
+:icons: font
+:page-partial:
+:source-highlighter: highlightjs
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+include::{partialsdir}/README.adoc[tag=metadata]
+
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+include::{partialsdir}/README.adoc[tag=metadata]
+
+Aquesta secció presenta els principis generals i directius de la política _AGILE_ de l'Ajuntament de Barcelona, elaborats a partir dels estàndards de serveis digitals de l'Ajuntament de Barcelona, dins del marc del seu Pla de transformació digital.
+Els objectius més rellevants de les metodologies àgils són:
+
+
+* *POSAR MÉS INTERÈS EN LA PERSONA USUÀRIA FINAL.*
+
+** Donar poder a la persona usuària final en la presa de decisions.
+** Ser més flexible i lliurar més valor
+
+* *TRANSFORMAR LA CULTURA ORGANITZATIVA.*
+
+** Posar èmfasi en la col·laboració i la transparència.
+** Enfocar l'orientació més cap al valor mantenint el control dels desenvolupaments.
+
+* *ESCURÇAR EL TEMPS DE DESENVOLUPAMENT.*
+
+** Millorar, a la vegada, la qualitat tècnica.
+** Lliurar més freqüentment, de manera fiable, per avançar el retorn de la inversió.
+
+* *IMPLEMENTAR LA MILLORA CONTINUA.*
+
+** Sistematitzar la millora continua basada en cicles curts d'inspecció i adaptació.
+** Dotar l'organització d'agents actius de la millora sistèmica i dels equips.
+
+L'aplicació d'aquests principis i directrius es farà a través de la realització dels projectes de transformació digital àgil de l'Ajuntament, gestionats principalment per l'IMI.
+Aquests projectes permetran la dedicació de recursos, la creació d'infraestructura i l'adquisició de competències per a portar a terme aquestes transformacions.
+D'aquesta manera, la gestió del canvi que suposa l'aplicació d'aquestes pràctiques dins de l'Ajuntament es farà de manera iterativa a través de projectes concrets.
+Alguns projectes i les seves ampliacions (per exemple, Decidim.Barcelona) ja compleixen en bona mesura les directrius indicades aquí, uns altres ho aniran aconseguint amb un procés d'implementació més progressiu.
+
+== Principis generals i directius de la política Agile de l'Ajuntament de Barcelona
+
+Tal com es defineixen en el document Directrius per a la prestació de serveis digitals Agile de l'Ajuntament de Barcelona, els principis generals en el desenvolupament Agile dins de les entitats de l'Ajuntament són:
+
+[upperalpha]
+. *COL·LABORACIÓ INTERDISCIPLINÀRIA.* -
+Es configuren equips multidisciplinaris amb persones provinents de diverses disciplines o entorns de treball, en els quals tothom està implicat al 100% i que incloguin els rols i les especialitats necessàries per desenvolupar aplicacions, serveis i processos.
+Només una o dues persones en són responsables directament, però l'èxit de l'equip recau per igual en tots els membres.
+
+. *EQUIPS AUTOORGANITZATS.* -
+Els equips que s'organitzen de forma autònoma i flexible poden crear nous enfocaments i adaptar-se per sí mateixos a reptes nous en el seu entorn.
+En conseqüència, els rols i les responsabilitats dins dels equips tindran un cert nivell de flexibilitat i fluïdesa d'acord amb l'experiència, les habilitats i els coneixements de les persones integrants, així com de les necessitats dels projectes.
+
+. *COMUNICACIÓ.* -
+S'ha d'establir un pla de comunicació tenint en comte la transparència i les responsabilitats dels agents implicats.
+Cal identificar les persones usuàries clau dels serveis i els processos municipals, així com els actors que participen en la part tècnica.
+Tots seran els destinataris de les accions comunicatives que s'hauran de dur a terme amb una freqüència adient als objectius i les necessitats dels projectes.
+Les converses cara a cara tindran prioritat enfront d'altres canals de comunicació.
+
+. *TRANSPARÈNCIA.* -
+S'haurien de compartir, de manera oberta i transparent amb els actors clau, l'estatus del projecte, les prioritats, els riscos, els problemes i els “elements de bloqueig” eventuals per abordar els reptes amb rapidesa.
+Això es pot fer amb comunicacions directes, però també fent servint eines adaptades a la metodologia àgil, com les taules Kanban.
+
+. *MILLORA CONTÍNUA.* -
+S'establiran pràctiques de treball col·laboratiu per facilitar una cultura d'aprenentatge i de millora contínua, tant del servei prestat com dels integrants de l'equip.
+
+. *RETROACCIÓ RÀPIDA.* -
+L'equip s'esforçarà per fer iteracions tan curtes com sigui possible.
+Les pràctiques d'equip es faran de tal manera que facilitin l'obtenció de la retroacció d'una manera ràpida i s'incorpori en el *backlog* del projecte.
+
+. *ACCEPTACIÓ DEL CANVI.* -
+S'entén que els plans i els projectes evolucionaran i canviaran al llarg de la prestació del servei.
+S'establiran pràctiques d'anàlisi i de planificació per reflectir aquest fet.
+
+. *PENSAMENT ITERATIU.* -
+Les activitats d'anàlisi, disseny, planificació i desenvolupament adoptaran un enfocament iteratiu en cicles curts per permetre la retroacció i canviar les prioritats segons les necessitats.
+
+. *DESPLEGAMENT RÀPID, DESPLEGAMENT FREQÜENT.* -
+Cal posar èmfasi a donar valor a les persones usuàries finals tan ràpidament com sigui possible, reduir el temps de posada en producció de les aplicacions i rebre retroacció de les persones usuàries al més ràpid possible.
+Es donarà prioritat al producte mínim viable identificat que respongui a les necessitats prioritàries de les persones usuàries i les entregues següents es faran d'acord amb aquest enfocament.
+
+. *INTERÈS A OFERIR VALOR A LA PERSONA USUÀRIA.* -
+S'han de posar les necessitats de la persona usuària al capdavant.
+Les necessitats de la persona usuària van per davant de qualsevol altra necessitat, fins i tot les dels actors clau.
+Quan hi hagi un conflicte de necessitats entre els grups, ens hem d'assegurar que hi ha unes prioritats clares.
+Es promourà la diversitat en els equips per afavorir dissenys inclusius.
+
+. *QUALITAT.* -
+La qualitat no fa referència només a la qualitat tècnica, sinó també a la qualitat del servei.
+La qualitat està present a cada pas del procés i totes les persones de l'equip tenen la responsabilitat de garantir que el servei és d'un nivell alt.
+
+. *MESURA DEL PROGRÉS.* -
+L'entrega de programari executable és la mesura principal de progrés.
+També cal aplicar altres mesures que reflecteixen el valor aportat a la persona usuària i al negoci per garantir que satisfà les necessitats reals i dona un valor real.
+
+Aquests principis i directrius s'aplicaran en projectes i serveis TIC a través de les pràctiques i les mesures que es presenten a la secció següent.

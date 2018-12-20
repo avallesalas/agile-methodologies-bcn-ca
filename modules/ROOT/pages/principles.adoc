@@ -1,0 +1,148 @@
+= Principis generals de desenvolupament _AGILE_
+
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+include::{partialsdir}/README.adoc[tag=metadata]
+
+== Concepte i definicions
+
+El desenvolupament de programari àgil és una filosofia i un terme “paraigua” per a una col·lecció de mètodes o aproximacions que comparteixen característiques comunes.
+Hi ha diverses metodologies àgils, de les quals les principals són Scrum i Extreme Programming (XP).
+
+Generalment, són un conjunt de metodologies utilitzades en l'àmbit del desenvolupament i el manteniment de programari, basades en processos iteratius i de durada curta (típicament duren d'una a quatre setmanes), que donen com a resultat el lliurament inicial d'un producte parcial, però operatiu, i de versions consecutives cada vegada de millor rendiment.
+A través d'aquestes iteracions continuades, aquestes metodologies cerquen aportar valor des de l'inici del projecte, així com dur a terme una evolució continuada del producte.
+L'objectiu és introduir millores i una evolució constant dels productes fins assolir un resultat final excel·lent que doni resposta a tots els requeriments de l'usuari.
+
+Aquesta estratègia permet minimitzar el risc, ja que cada iteració és com un projecte en miniatura i inclou totes les fases necessàries: planificació, anàlisi de requisits, disseny, codificació, proves d'usuari i documentació.
+Així, els problemes en l'execució, l'adaptació als requeriments i els riscos del projecte afloren amb anterioritat i les accions correctores són menys costoses i més immediates que en un projecte tradicional de desenvolupament (en el qual acostumen a aflorar en la fase final del projecte després de mesos d'evolució).
+
+Així mateix, les metodologies àgils posen el focus en la satisfacció de l'usuari, ja que requereixen que participi activament en el projecte tant durant la conceptualització com en el desenvolupament (a través de la validació de les entregues parcials).
+D'aquesta manera es garanteix que el producte final doni resposta a les necessitats de l'usuari i estigui en línia amb les seves expectatives.
+
+Tot això es basa en el denominat Manifest AGILE, de 2001:
+
+.Manifest _AGILE_
+TIP: *Estem posant al descobert maneres millors de desenvolupar programari fent-ho i ajudant a altres a fer-ho.*
+*Mitjançant aquesta feina hem acabat valorant:*
+*Individus i interaccions per sobre de processos i eines. Programari que funciona per sobre de documentació exhaustiva. Col·laboració amb el client per sobre de negociació de contractes.Resposta al canvi per sobre de cenyir-se a una planificació.*
+*És a dir, encara que els elements de la dreta tenen valor, nosaltres valorem més els de l'esquerra.*
+_http://agilemanifesto.org/iso/ca/manifesto.html_
+
+Del Manifest AGILE, s'han deduït dotze principis que haurien de perseguir les metodologies àgils:
+
+. La nostra prioritat és satisfer al client mitjançant el lliurament primerenc i continu de programari que aporti valor.
+
+. Acceptem de bon grat canvis als requisits, inclús si arriben cap al final del desenvolupament.
+Els processos àgils aprofiten el canvi per donar un avantatge competitiu al client.
+
+. Lliurem amb freqüència programari que funcioni, des d'un parell de setmanes fins a un parell de mesos, amb preferència per l'escala de temps més curta.
+
+. La gent de negoci i els desenvolupadors han de treballar junts de manera quotidiana durant tot el projecte.
+
+. Construïm projectes amb l'ajuda d'individus motivats.
+Els donem l'entorn i el suport que necessiten i confiem en ells per fer la feina.
+
+. El mètode més eficient i efectiu de comunicar informació cap a i dins d'un equip de desenvolupament és la conversa cara a cara.
+
+. El programari que funciona és la mesura principal de progrés.
+
+. Els processos àgils promouen el desenvolupament sostingut.
+Els promotors, els desenvolupadors i els usuaris han de ser capaços de mantenir un ritme constant de manera indefinida.
+
+. L'atenció contínua a l'excel·lència tècnica i al bon disseny millora l'agilitat.
+
+. La simplicitat, l'art de maximitzar la quantitat de feina que no es fa, és essencial.
+
+. Les millors arquitectures, requisits i dissenys emergeixen d'equips autoorganitzats.
+
+. En intervals regulars, l'equip reflexiona sobre com ésser més efectiu, s'afina i ajusta el seu comportament d'acord amb això.
+
+_http://agilemanifesto.org/iso/ca/priciples.html_
+
+La clau del model _AGILE_ és que el projecte global es descompon en una sèrie de cicles de desenvolupament curt (coneguts generalment com a iteracions o, en la terminologia Scrum, sprints) d'aproximadament dues a quatre setmanes cadascuna.
+Per a cadascuna de les iteracions, l'equip de desenvolupament duu a terme les mateixes activitats del model de “cascada” (és a dir, planificació, disseny, codificació, tests i desplegament), però sota pràctiques de treball àgils.
+
+El gràfic que es mostra a continuació representa un exemple del cicle de vida d'un projecte, a partir del model àgil Scrum, juntament amb els actors involucrats en cadascuna de les fases.
+Al llarg del document s'aniran explicant els diversos conceptes introduïts en el gràfic.
+
+image::ScrumInfographic.svg[Scrum info-graphic, width=80%]
+
+Les activitats habituals del mètode àgil Scrum són:
+
+. Descobriment
+. _Backlog_
+. Iteracions / _sprints_
+
+L'activitat de *Descobriment* defineix el producte mínim viable (PMV) que cal produir.
+Es basa en tallers de treball i entrevistes que produeixen una *“visió de producte”*, que és la definició bàsica del sistema que es vol desenvolupar.
+
+*El product backlog* (“pila de producte”) és una llista de tots dels elements individuals estimats per dur a terme el projecte global; és a dir, els elements distingibles (programables) que componen la visió del producte.
+
+*Per cada sprint* (és a dir, un cicle de desenvolupament de setmanes), l'equip de desenvolupament prepara un *_sprint backlog_*.
+Aquest document estableix quins elements de desenvolupament del _product backlog_ es duran a terme durant l'_sprint_ en curs (començant amb els elements de prioritat més alts).
+En altres paraules, és una llista _To Do_ (de coses que cal fer) per a l'_sprint_ en curs.
+
+L'equip de desenvolupament dissenyarà, programarà i testarà cadascun dels elements de desenvolupament llistats en el _backlog_ de l'_sprint_, durant les setmanes que duri.
+Cal esmentar també que, típicament, l'equip fa una reunió diària per assegurar-se que totes les activitats de l'sprint progressen adequadament segons s'han planificat.
+
+El resultat al final de cada _sprint_ hauria de ser un _potentially shippable_ product increment (és a dir, un element de programari que pot ser desplegat per al client o l'usuari), en el qual es pot observar un increment de valor o funcionalitats respecte a l'_sprint_ anterior.
+
+El conjunt format per aquestes tres activitats esmentades anteriorment defineix el *cicle _AGILE_*, que es repeteix fins que s'obté el resultat desitjat pel client (o al final del pressupost / temps atribuït al projecte).
+
+== Beneficis
+
+Entre els beneficis que comporta treballar amb una metodologia àgil podem destacar els següents:
+
+* *Interès en el valor i la satisfacció de client*, a través del lliurament ràpid i continu de programari útil.
+D'aquesta manera, el client té una visió continua del producte i de la seva evolució fins que obté el producte final
+
+* *Interès en les persones usuàries.*
+Les persones i les interaccions s'emfatitzen més que el procés i les eines.
+Clients, desenvolupadors i testers interaccionen constantment entre si per aportar visions, valoracions i millores del producte.
+
+* *Lliuraments amb més antelació*
+El programari creat es lliura freqüentment (en setmanes més que mesos) a través dels diversos sprints, de manera que fa que en cadascun hi hagi un increment evolutiu respecte a l'anterior.
+
+* *•	Costos i planificació previsibles.*
+El cost és previsible i limitat a la quantitat de feina que pot dur a terme l'equip, ja que durant les revisions del _backlog_ es calculen els costos de desenvolupament dels paquets de feina que el formen.
+
+* *Compromís dels stakeholders (grups d'interès).*
+El mètode àgil exigeix una cooperació propera i diària amb les persones usuàries, tant per obtenir correctament els requisits del projecte o per verificar l'increment de valor del producte en cada _sprint_.
+
+* *Transparència.*
+El progrés en el projecte és la conseqüència de tot el procés en si mateix, i això fa que els diversos actors involucrats puguin veure'l en tot moment.
+D'altra banda, la comunicació entre aquests actors és més directe (“cara a cara”) i constant durant tot el projecte.
+
+* *Millora la qualitat.*
+El mètode àgil produeix una atenció contínua a l'excel·lència tècnica i el disseny de qualitat.
+Utilitzar eines específiques i tècniques, com la integració contínua o el TDD (_Test Driven Development_), aporta una millora contínua de la qualitat del producte.
+
+* *Flexibilitat davant dels canvis.*
+El cicle iteratiu permet una adaptació regular a circumstàncies canviants, com, per exemple, la identificació de possibles canvis o millores sobre el producte abans de finalitzar-lo.
+Aquest procés també permet poder acceptar canvis en els requisits tardans.
+
+TIP: *“Development productivity was increased, the transparency of development activities was enhanced and the relative proportion of administrative work was reduced (by up to 25%).*
+*The increased efficacy allows the public authority to develop more digital services on a limited budget”.*
+_Finnish agency responsible for driving licences, quoted in Nuottila et al. (2013), about an Agile project in the Transport Department._
+
+== Implicacions i reptes
+
+Sense entrar en el detall dels impactes sobre les organitzacions de les metodologies àgils i les seves diferències amb metodologies tradicionals com la “cascada”, la posada en marxa de les primeres implica un canvi en la gestió de projectes, la participació del personal del client (l'Administració pública) i la manera de contractar i lliurar els serveis del proveïdor i els resultats del projecte.
+
+Pel que fa a l'organització de projectes, es pot ressaltar el fet que, amb aquesta metodologia, els resultats lliurats no són necessàriament els finals o els predefinits a l'inici del projecte: al contrari, el programari resultant del desenvolupament suporta variacions mitjançant un procés iteratiu, d'acord amb les necessitats de les persones usuàries i la seva resposta davant les versions inicials del producte.
+
+Per al client (persona usuària), l'AGILE posa èmfasi en la col·laboració.
+Al llarg del cicle de vida de lliurament o iteració, ambdues parts (client i proveïdor) treballen juntes en cada etapa per assolir els objectius.
+L'esforç de la col·laboració serà més gran durant la fase de disseny, en què les parts treballen conjuntament per determinar els requisits funcionals i no funcionals (com l'experiència d'usuari, UX) de la iteració o resultat lliurable.
+La contractació àgil requereix, per tant, una dedicació (de gent i de temps) molt més intensiva per part del client en comparació amb la que els clients poden emprar en la contractació tradicional de cascades.
+
+Respecte a la contractació, més enllà dels impactes esmentats, l'entitat no contracta una solució definitiva i definida (des del principi), sinó que contracta el desenvolupament d'aspectes d'una solució que evolucionen i s'incorporen de manera incremental, per assolir les necessitats identificades (user stories) i els objectius desenvolupant generals del client.
+Significa, habitualment, que la manera de contractar serveis tecnològics implementant una metodologia àgil es fa sobre la base de time and materials (contractació basada en el temps i els recursos que s'utilitzaran), i això pot tenir variacions segons les característiques del projecte.
+
+D'altra banda, els criteris de lliurament i d'acceptació de resultats han de ser més flexibles, ateses les variacions de planificació motivades per canvis d'especificacions funcionals i tècniques que resulten de la retroalimentació de les persones usuàries sobre cada iteració o cicle de desenvolupament.
+
+Per tant, hem de treballar en els reptes d'aquesta metodologia de desenvolupament si volem gaudir dels beneficis.
+El desenvolupament continu de les competències dels equips de client i proveïdor, la seva implicació en el projecte i la gestió d'aquest personal són elements clau d'aquesta metodologia.
+La definició de l'abast i la mida dels projectes i dels equips de desenvolupament són altres criteris que cal tenir en compte a l'hora d'aplicar-la aquesta metodologia.
+A les grans organitzacions amb sistemes d'informació complexos, en les quals majoritàriament s'opera amb metodologies tradicionals, un dels reptes més importants és integrar i combinar les noves practiques àgils en els entorns i els processos ja existents.
