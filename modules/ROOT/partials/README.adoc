@@ -70,7 +70,7 @@
 //
 // DO NOT TOUCH.
 :page-lang: {lang}
-:uri-public-website: {uri-public-website-root}/{lang}/{component-name}/
+:uri-public-website: {uri-public-website-root}/{component-name}/
 // end::metadata[]
 
 = {_title}
