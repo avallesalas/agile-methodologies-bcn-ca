@@ -122,9 +122,9 @@ Utilitzar eines específiques i tècniques, com la integració contínua o el TD
 El cicle iteratiu permet una adaptació regular a circumstàncies canviants, com, per exemple, la identificació de possibles canvis o millores sobre el producte abans de finalitzar-lo.
 Aquest procés també permet poder acceptar canvis en els requisits tardans.
 
-TIP: *“Development productivity was increased, the transparency of development activities was enhanced and the relative proportion of administrative work was reduced (by up to 25%).*
-*The increased efficacy allows the public authority to develop more digital services on a limited budget”.*
-_Finnish agency responsible for driving licences, quoted in Nuottila et al. (2013), about an Agile project in the Transport Department._
+TIP: *“La productivitat del desenvolupament va augmentar, la transparència de les activitats de desenvolupament va millorar i la proporció relativa de treball administratiu es va reduir (fins al 25%).*
+*L'increment de l'eficiència permet a l'autoritat pública desenvolupar més serveis digitals amb el pressupost limitat”.*
+_Agència Finlandesa responsable dels permisos de conduir, citat a Nuottila et al. (2013), sobre un projecte Agile en el Departament de Transport._
 
 == Implicacions i reptes
 
