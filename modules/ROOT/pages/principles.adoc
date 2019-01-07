@@ -58,7 +58,7 @@ Els promotors, els desenvolupadors i els usuaris han de ser capaços de mantenir
 
 . En intervals regulars, l'equip reflexiona sobre com ésser més efectiu, s'afina i ajusta el seu comportament d'acord amb això.
 
-_http://agilemanifesto.org/iso/ca/priciples.html_
+_http://agilemanifesto.org/iso/ca/principles.html_
 
 La clau del model _AGILE_ és que el projecte global es descompon en una sèrie de cicles de desenvolupament curt (coneguts generalment com a iteracions o, en la terminologia Scrum, sprints) d'aproximadament dues a quatre setmanes cadascuna.
 Per a cadascuna de les iteracions, l'equip de desenvolupament duu a terme les mateixes activitats del model de “cascada” (és a dir, planificació, disseny, codificació, tests i desplegament), però sota pràctiques de treball àgils.
