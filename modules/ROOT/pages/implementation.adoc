@@ -118,7 +118,7 @@ Durant aquesta activitat, s'espera una alta interacció amb les persones usuàri
 === ACTIVITAT: _SPRINT_
 
 L'objectiu d'aquesta activitat és la construcció de l'increment del sistema, representat per l'_sprint_ backlog, corresponent a la prioritat de negoci i tècnica que consensuïn el _Product Owner_ i el _Proxy Product Owner_ amb l'Equip de desenvolupament.
-Al final de l'_sprint_, el PO i el PPO són els responsables de fer la validació i l'acceptació formal dels paquets de treball que formin l'increment, sempre amb l'assistència de l'_Scrum Manager_.
+Al final de l'_sprint_, el PO i el PPO són els responsables de fer la validació i l'acceptació formal dels paquets de treball que formin l'increment, sempre amb l'assistència de l'_Scrum Master_.
 
 L'incompliment per part de l'adjudicatari a l'hora de lliurar els increments realitzats al final de l'_sprint_ podrà ser objecte d'aplicació de sancions per part de l'IMI, tal com es detalla a la clàusula “Penalitzacions del plec administratiu”.
 
